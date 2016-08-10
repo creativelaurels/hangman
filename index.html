@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Bootswatch Styling for Improving the Aesthetics -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css">
+
+  <!-- Font Awesome CSS Icons (glyphicons) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- Custom Style -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+	<div class="container">
+
+			<div class="jumbotron">
+					<h1>Hangman</h1>
+					<p>Heroine Edition!</p>
+			</div> <!--end of jumbotron-->
+	</div> <!--end of container-->
+
+	<!-- Panel for current train schedule table display-->
+	<div class="panel panel-default">
+				<div class="panel-heading">
+						<h3 class="panel-title">Word To Guess</h3>
+				</div>
+				<div class="panel-body">
+						<h2 id="wordToGuess"> _ _ _ _ _ _ _ _ </h2>
+				</div>
+	</div>
+
+
+	<div class="panel panel-default">
+			<div class="panel-body">
+				Wrong Guesses: <span id="wrongGuesses"></span>
+			</div>
+	</div>
+
+	<div class="panel panel-default">
+			<div class="panel-body">
+				Guesses Left: <span id="numGuesses">5</span>
+			</div>
+	</div>
+
+	<div class="panel panel-default">
+			<div class="panel-body">
+					Win Counter: <span id="winCounter">0</span>
+			</div>
+	</div>
+
+	<div class="panel panel-default">
+			<div class="panel-body">
+				Loss Counter: <span id="lossCounter">0</span>
+			</div>
+	</div>
+<!--Jquery and Javascript-->
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type="text/javascript" src="assets/javascript/logic.js"></script>
+
+
+</body>
+</html>
